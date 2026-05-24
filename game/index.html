@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeSheet Academy is a beginner-friendly HTML and CSS learning website with visual examples, diagrams, quizzes, projects, a live playground, and copyable templates.">
+    <meta name="author" content="CodeSheet Academy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#070b14">
+    <meta property="og:title" content="CodeSheet Academy | HTML + CSS Guide">
+    <meta property="og:description" content="Learn HTML and CSS with code examples, visual results, diagrams, projects, quizzes, and a live playground.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeSheet Academy | HTML + CSS Guide">
+    <meta name="twitter:description" content="A complete HTML and CSS learning guide for beginners and growing developers.">
+    <title>CodeSheet Academy | HTML + CSS Guide</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LearningResource",
+            "name": "CodeSheet Academy",
+            "description": "A complete HTML and CSS learning guide with examples, diagrams, projects, quizzes, and a live playground.",
+            "learningResourceType": "Interactive guide",
+            "educationalLevel": "Beginner to intermediate",
+            "teaches": ["HTML", "CSS", "Responsive design", "Web layout"]
+        }
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#top">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#top">
+                <span class="brand-mark">CS</span>
+                <span>CodeSheet Academy</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#start">Start</a>
+                <a href="#html">HTML</a>
+                <a href="#css">CSS</a>
+                <a href="#playground">Playground</a>
+                <a href="#support">Support</a>
+                <details class="more-menu">
+                    <summary>More</summary>
+                    <div>
+                        <a href="#examples">Examples</a>
+                        <a href="#html-elements">Elements</a>
+                        <a href="#layouts">Layouts</a>
+                        <a href="#diagrams">Diagrams</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#dictionary">Dictionary</a>
+                        <a href="#challenges">Challenges</a>
+                        <a href="#progress">Progress</a>
+                        <a href="#quiz">Quiz</a>
+                        <a href="#publish">Publish</a>
+                    </div>
+                </details>
+            </div>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Dark</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">HTML + CSS from zero to confident</p>
+                <h1>Build websites even when you forget the syntax.</h1>
+                <p class="hero-text">
+                    A big, practical reference for total beginners and growing developers.
+                    Learn what each piece does, copy clean examples, and use the checklists
+                    when your brain goes blank.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#start">I am new</a>
+                    <a class="button secondary" href="#advanced">I know basics</a>
+                </div>
+                <div class="hero-chips" aria-label="Main site features">
+                    <span>Free forever</span>
+                    <span>Live playground</span>
+                    <span>Mobile ready</span>
+                    <span>Copy examples</span>
+                </div>
+            </div>
+
+            <aside class="hero-panel" aria-label="Website file structure example">
+                <div class="panel-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <strong>project</strong>
+                </div>
+                <pre><code>my-website/
+├── index.html   // page structure
+├── style.css    // colors, layout, design
+└── script.js    // interaction later</code></pre>
+                <div class="mini-result">
+                    <span class="dot"></span>
+                    <p>Browser reads HTML, downloads CSS, then paints the page.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="stats-grid" aria-label="Learning overview">
+            <article>
+                <strong>01</strong>
+                <span>Structure with HTML</span>
+            </article>
+            <article>
+                <strong>02</strong>
+                <span>Style with CSS</span>
+            </article>
+            <article>
+                <strong>03</strong>
+                <span>Layout with Flexbox/Grid</span>
+            </article>
+            <article>
+                <strong>04</strong>
+                <span>Improve with practice</span>
+            </article>
+        </section>
+
+        <section id="search" class="section search-section">
+            <div class="section-heading compact">
+                <p class="eyebrow">Search the guide</p>
+                <h2>Find what you forgot</h2>
+                <p>Type a word like button, grid, form, header, color, margin, or responsive.</p>
+            </div>
+
+            <div class="search-tool">
+                <input id="site-search" type="search" aria-label="Search lessons" placeholder="Search lessons, tags, CSS properties, projects...">
+                <p id="search-count">Start typing to filter helpful sections.</p>
+                <div class="search-results" id="search-results" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="start" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Start here</p>
+                <h2>If you have zero experience</h2>
+                <p>Think of a website like a house: HTML is the rooms and walls, CSS is the paint and furniture, JavaScript is the electricity and moving parts.</p>
+            </div>
+
+            <div class="learning-path">
+                <article class="lesson-card">
+                    <span class="step">1</span>
+                    <h3>Create the files</h3>
+                    <p>Make one folder. Inside it, create <code>index.html</code> and <code>style.css</code>.</p>
+                </article>
+                <article class="lesson-card">
+                    <span class="step">2</span>
+                    <h3>Write page content</h3>
+                    <p>Use headings, paragraphs, links, images, lists, sections, and buttons.</p>
+                </article>
+                <article class="lesson-card">
+                    <span class="step">3</span>
+                    <h3>Connect the CSS</h3>
+                    <p>Add <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> inside the HTML <code>&lt;head&gt;</code>.</p>
+                </article>
+                <article class="lesson-card">
+                    <span class="step">4</span>
+                    <h3>Style slowly</h3>
+                    <p>Start with body, colors, fonts, spacing, then layout. Do not try to style everything at once.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="html" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">HTML reference</p>
+                <h2>The structure of every page</h2>
+                <p>HTML tells the browser what each part means. Good HTML makes your site easier to style, read, search, and access.</p>
+            </div>
+
+            <div class="content-grid">
+                <article class="code-card wide">
+                    <div class="card-title">
+                        <h3>Complete starter HTML</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;Navigation&lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Main title&lt;/h1&gt;
+            &lt;p&gt;Short description of the page.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;Footer content&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </article>
+
+                <article class="reference-card">
+                    <h3>Common tags</h3>
+                    <dl class="reference-list">
+                        <div><dt><code>&lt;h1&gt;</code></dt><dd>Main title. Use one main H1 per page.</dd></div>
+                        <div><dt><code>&lt;p&gt;</code></dt><dd>Normal paragraph text.</dd></div>
+                        <div><dt><code>&lt;a&gt;</code></dt><dd>Link to another page, section, file, or website.</dd></div>
+                        <div><dt><code>&lt;img&gt;</code></dt><dd>Image. Needs <code>src</code> and helpful <code>alt</code>.</dd></div>
+                        <div><dt><code>&lt;button&gt;</code></dt><dd>An action the user can press.</dd></div>
+                    </dl>
+                </article>
+
+                <article class="reference-card">
+                    <h3>Semantic tags</h3>
+                    <dl class="reference-list">
+                        <div><dt><code>&lt;header&gt;</code></dt><dd>Intro or top area.</dd></div>
+                        <div><dt><code>&lt;nav&gt;</code></dt><dd>Navigation links.</dd></div>
+                        <div><dt><code>&lt;main&gt;</code></dt><dd>Main page content.</dd></div>
+                        <div><dt><code>&lt;section&gt;</code></dt><dd>A grouped topic area.</dd></div>
+                        <div><dt><code>&lt;footer&gt;</code></dt><dd>Bottom information.</dd></div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading compact">
+                <p class="eyebrow">Forms and media</p>
+                <h2>Useful patterns you will repeat</h2>
+            </div>
+
+            <div class="two-column">
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>Accessible form</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;Name&lt;/label&gt;
+    &lt;input id="name" name="name" type="text" required&gt;
+
+    &lt;label for="message"&gt;Message&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </article>
+
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>Image card</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>&lt;article class="card"&gt;
+    &lt;img src="website.jpg" alt="Dashboard preview"&gt;
+    &lt;h2&gt;Project title&lt;/h2&gt;
+    &lt;p&gt;Project description.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="examples" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Code + result lab</p>
+                <h2>See what every piece creates</h2>
+                <p>
+                    This section is for learning by seeing. The left side explains what the code means.
+                    The middle shows the exact code. The right side shows the result that appears on the website.
+                </p>
+            </div>
+
+            <div class="example-stack">
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">01</span>
+                        <h3>Header</h3>
+                        <p>
+                            A <code>&lt;header&gt;</code> is usually the top part of a website. It often contains the logo,
+                            navigation, and important buttons. If you see a line across the top of a website,
+                            that is usually the header area.
+                        </p>
+                        <ul>
+                            <li><code>&lt;header&gt;</code> wraps the top area.</li>
+                            <li><code>&lt;nav&gt;</code> tells the browser this is navigation.</li>
+                            <li><code>&lt;a&gt;</code> creates each clickable link.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Header code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;header class="demo-header"&gt;
+    &lt;strong&gt;MySite&lt;/strong&gt;
+    &lt;nav&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <header class="sample-header">
+                                <strong>MySite</strong>
+                                <nav>
+                                    <a href="#">Home</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Contact</a>
+                                </nav>
+                            </header>
+                            <div class="callout-line">This full line is the header.</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">S</span>
+                        <h3>Semantic page structure</h3>
+                        <p>
+                            Semantic tags describe the job of each page area. They make your code easier to read
+                            and help browsers, search engines, and screen readers understand the page.
+                        </p>
+                        <ul>
+                            <li><code>&lt;header&gt;</code> intro or top area.</li>
+                            <li><code>&lt;nav&gt;</code> navigation links.</li>
+                            <li><code>&lt;main&gt;</code> main page content.</li>
+                            <li><code>&lt;section&gt;</code> a grouped topic area.</li>
+                            <li><code>&lt;footer&gt;</code> bottom information.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Semantic code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;header&gt;
+    &lt;nav&gt;Home About Contact&lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h1&gt;Learn HTML&lt;/h1&gt;
+        &lt;p&gt;This is one topic area.&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Bottom information&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="sample-semantic-page">
+                                <header>
+                                    <span class="part-label">&lt;header&gt;</span>
+                                    <nav>
+                                        <span class="part-label">&lt;nav&gt;</span>
+                                        <a href="#">Home</a>
+                                        <a href="#">About</a>
+                                        <a href="#">Contact</a>
+                                    </nav>
+                                </header>
+                                <main>
+                                    <span class="part-label">&lt;main&gt;</span>
+                                    <section>
+                                        <span class="part-label">&lt;section&gt;</span>
+                                        <h4>Learn HTML</h4>
+                                        <p>This is one topic area.</p>
+                                    </section>
+                                </main>
+                                <footer>
+                                    <span class="part-label">&lt;footer&gt;</span>
+                                    <p>Bottom information</p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">02</span>
+                        <h3>Hero Section</h3>
+                        <p>
+                            A hero section is the first big area people see. It usually has a headline,
+                            short text, and one important button. Use it to explain the purpose of the page fast.
+                        </p>
+                        <ul>
+                            <li><code>&lt;section&gt;</code> groups one topic.</li>
+                            <li><code>&lt;h1&gt;</code> is the main title.</li>
+                            <li><code>&lt;p&gt;</code> explains the title.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Hero code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;section class="hero-box"&gt;
+    &lt;h1&gt;Learn HTML and CSS&lt;/h1&gt;
+    &lt;p&gt;Build your first website step by step.&lt;/p&gt;
+    &lt;a href="#"&gt;Start now&lt;/a&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <section class="sample-hero">
+                                <h4>Learn HTML and CSS</h4>
+                                <p>Build your first website step by step.</p>
+                                <a href="#">Start now</a>
+                            </section>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">03</span>
+                        <h3>Card</h3>
+                        <p>
+                            A card is a small box used to group related content. Cards are common in portfolios,
+                            product pages, dashboards, blogs, and menus.
+                        </p>
+                        <ul>
+                            <li><code>&lt;article&gt;</code> is good for reusable content blocks.</li>
+                            <li><code>class="card"</code> lets CSS style this box.</li>
+                            <li>Padding creates space inside the card.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Card code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;article class="card"&gt;
+    &lt;h2&gt;Portfolio Project&lt;/h2&gt;
+    &lt;p&gt;A simple website made with HTML and CSS.&lt;/p&gt;
+    &lt;button&gt;View project&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <article class="sample-card">
+                                <h4>Portfolio Project</h4>
+                                <p>A simple website made with HTML and CSS.</p>
+                                <button type="button">View project</button>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">04</span>
+                        <h3>Button</h3>
+                        <p>
+                            A button is for an action, like sending a form or opening a menu.
+                            A link is for moving somewhere. This difference matters for clean code.
+                        </p>
+                        <ul>
+                            <li>Use <code>&lt;button&gt;</code> for actions.</li>
+                            <li>Use <code>&lt;a&gt;</code> for navigation.</li>
+                            <li>CSS controls the size, color, and hover effect.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Button CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.button {
+    background: #38bdf8;
+    color: #03111f;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background: #34d399;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <button class="sample-button" type="button">Click me</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">05</span>
+                        <h3>Form</h3>
+                        <p>
+                            A form collects information. Every input should have a label so people understand
+                            what to type, and so screen readers can explain the field.
+                        </p>
+                        <ul>
+                            <li><code>&lt;label&gt;</code> names the field.</li>
+                            <li><code>&lt;input&gt;</code> lets the user type.</li>
+                            <li><code>type="email"</code> asks for an email format.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Form code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;form&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input id="email" type="email"&gt;
+    &lt;button&gt;Join&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <form class="sample-form">
+                                <label for="sample-email">Email</label>
+                                <input id="sample-email" type="email" placeholder="you@example.com">
+                                <button type="button">Join</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">06</span>
+                        <h3>Grid Layout</h3>
+                        <p>
+                            Grid makes rows and columns. The example creates three boxes in one row on big screens.
+                            On small screens, CSS can make them stack.
+                        </p>
+                        <ul>
+                            <li><code>display: grid</code> turns on grid layout.</li>
+                            <li><code>grid-template-columns</code> decides columns.</li>
+                            <li><code>gap</code> creates space between boxes.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Grid CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="sample-grid">
+                                <span>Box 1</span>
+                                <span>Box 2</span>
+                                <span>Box 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="html-elements" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">HTML element library</p>
+                <h2>More tags you will see in real websites</h2>
+                <p>
+                    HTML has many elements, but you do not need to memorize all of them at once.
+                    Learn what each element is for, then copy the pattern when you need it.
+                </p>
+            </div>
+
+            <div class="example-stack">
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">16</span>
+                        <h3>Table</h3>
+                        <p>
+                            Use a table for real rows and columns of data, like prices, schedules, grades,
+                            stats, or comparisons. Do not use tables just to create page layout.
+                        </p>
+                        <ul>
+                            <li><code>&lt;table&gt;</code> wraps the data.</li>
+                            <li><code>&lt;th&gt;</code> is a heading cell.</li>
+                            <li><code>&lt;td&gt;</code> is a normal data cell.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Table code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Tag&lt;/th&gt;
+        &lt;th&gt;Use&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;h1&lt;/td&gt;
+        &lt;td&gt;Main title&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <table class="sample-table">
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Use</th>
+                                </tr>
+                                <tr>
+                                    <td>h1</td>
+                                    <td>Main title</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>Paragraph</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">17</span>
+                        <h3>Details and summary</h3>
+                        <p>
+                            This creates a built-in open/close box without JavaScript. It is useful for FAQs,
+                            extra explanations, and optional information.
+                        </p>
+                        <ul>
+                            <li><code>&lt;summary&gt;</code> is the clickable title.</li>
+                            <li><code>&lt;details&gt;</code> hides or shows the content.</li>
+                            <li>The browser gives it basic interaction for free.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Details code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;details&gt;
+    &lt;summary&gt;What is HTML?&lt;/summary&gt;
+    &lt;p&gt;HTML describes the structure of a page.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <details class="sample-details" open>
+                                <summary>What is HTML?</summary>
+                                <p>HTML describes the structure of a page.</p>
+                            </details>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">18</span>
+                        <h3>Blockquote</h3>
+                        <p>
+                            Use a blockquote when you show a quote from another person, article, or source.
+                            It tells readers and browsers that this text is quoted.
+                        </p>
+                        <ul>
+                            <li><code>&lt;blockquote&gt;</code> wraps the quote.</li>
+                            <li><code>&lt;cite&gt;</code> can name the source.</li>
+                            <li>CSS can make it look like a quote card.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Quote code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;blockquote&gt;
+    &lt;p&gt;Practice is how code becomes familiar.&lt;/p&gt;
+    &lt;cite&gt;CodeSheet&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <blockquote class="sample-quote">
+                                <p>Practice is how code becomes familiar.</p>
+                                <cite>CodeSheet</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">19</span>
+                        <h3>Aside</h3>
+                        <p>
+                            An aside is content related to the main content, but not the main content itself.
+                            Examples: tips, ads, side notes, profile cards, and related links.
+                        </p>
+                        <ul>
+                            <li><code>&lt;aside&gt;</code> means side information.</li>
+                            <li>It can appear beside content or inside an article.</li>
+                            <li>Great for notes and helpful reminders.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Aside code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;aside&gt;
+    &lt;h3&gt;Tip&lt;/h3&gt;
+    &lt;p&gt;Use semantic tags before styling.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <aside class="sample-aside">
+                                <h4>Tip</h4>
+                                <p>Use semantic tags before styling.</p>
+                            </aside>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">20</span>
+                        <h3>Progress</h3>
+                        <p>
+                            The progress element shows completion. Use it for upload progress, course progress,
+                            task progress, or setup steps.
+                        </p>
+                        <ul>
+                            <li><code>value</code> is the current amount.</li>
+                            <li><code>max</code> is the full amount.</li>
+                            <li>Browsers render it as a progress bar.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Progress code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;label for="course"&gt;Course progress&lt;/label&gt;
+&lt;progress id="course" value="70" max="100"&gt;70%&lt;/progress&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <div class="sample-progress">
+                                <label for="sample-course">Course progress</label>
+                                <progress id="sample-course" value="70" max="100">70%</progress>
+                                <span>70% complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">21</span>
+                        <h3>Input types</h3>
+                        <p>
+                            Inputs can ask for different kinds of data. Choosing the right type helps the browser
+                            show better controls, especially on phones.
+                        </p>
+                        <ul>
+                            <li><code>type="text"</code> normal typing.</li>
+                            <li><code>type="email"</code> email format.</li>
+                            <li><code>type="date"</code> date picker.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Inputs code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;input type="text" placeholder="Your name"&gt;
+&lt;input type="email" placeholder="Email"&gt;
+&lt;input type="date"&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="sample-inputs">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Email">
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="visual-basics" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">More real examples</p>
+                <h2>Small pieces that every website uses</h2>
+                <p>
+                    Websites are built from small patterns repeated many times. Learn these pieces and you can
+                    understand almost any page you see: text groups, lists, links, images, spacing, colors, and boxes.
+                </p>
+            </div>
+
+            <div class="example-stack">
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">07</span>
+                        <h3>Text hierarchy</h3>
+                        <p>
+                            Text hierarchy means making important text bigger and supporting text smaller.
+                            This helps visitors scan the page quickly.
+                        </p>
+                        <ul>
+                            <li><code>&lt;h1&gt;</code> is the biggest page idea.</li>
+                            <li><code>&lt;h2&gt;</code> starts a section.</li>
+                            <li><code>&lt;p&gt;</code> explains in normal text.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Text code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;section&gt;
+    &lt;p class="label"&gt;New lesson&lt;/p&gt;
+    &lt;h1&gt;Learn CSS faster&lt;/h1&gt;
+    &lt;p&gt;Start with the most common properties.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <section class="sample-text">
+                                <p>New lesson</p>
+                                <h4>Learn CSS faster</h4>
+                                <span>Start with the most common properties.</span>
+                            </section>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">08</span>
+                        <h3>Links</h3>
+                        <p>
+                            A link moves the user somewhere. It can go to another website, another page,
+                            or a section on the same page.
+                        </p>
+                        <ul>
+                            <li><code>href</code> is the destination.</li>
+                            <li><code>#section</code> jumps to an id on the page.</li>
+                            <li>Links should describe where they go.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Link code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;a href="about.html"&gt;Read about us&lt;/a&gt;
+&lt;a href="#contact"&gt;Jump to contact&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <div class="sample-links">
+                                <a href="#">Read about us</a>
+                                <a href="#">Jump to contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">09</span>
+                        <h3>Lists</h3>
+                        <p>
+                            Lists are perfect when you have steps, features, ingredients, rules, or a menu.
+                            Use unordered lists for normal bullets and ordered lists for numbered steps.
+                        </p>
+                        <ul>
+                            <li><code>&lt;ul&gt;</code> creates bullets.</li>
+                            <li><code>&lt;ol&gt;</code> creates numbers.</li>
+                            <li><code>&lt;li&gt;</code> is one list item.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>List code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;ul class="features"&gt;
+    &lt;li&gt;Fast to read&lt;/li&gt;
+    &lt;li&gt;Easy to scan&lt;/li&gt;
+    &lt;li&gt;Good for features&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <ul class="sample-list">
+                                <li>Fast to read</li>
+                                <li>Easy to scan</li>
+                                <li>Good for features</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">10</span>
+                        <h3>Image block</h3>
+                        <p>
+                            Images make pages easier to understand. The <code>alt</code> text explains the image
+                            when it cannot load or when a screen reader reads the page.
+                        </p>
+                        <ul>
+                            <li><code>src</code> is the image file.</li>
+                            <li><code>alt</code> describes the image.</li>
+                            <li><code>object-fit</code> controls cropping in CSS.</li>
+                        </ul>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Image code</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>&lt;figure&gt;
+    &lt;div class="image-placeholder"&gt;&lt;/div&gt;
+    &lt;figcaption&gt;Website preview&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <figure class="sample-figure">
+                                <div class="sample-image"></div>
+                                <figcaption>Website preview</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="css-effects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">CSS effects</p>
+                <h2>See how styling changes the result</h2>
+                <p>
+                    CSS is easier when you connect each property to what your eyes see.
+                    These examples show spacing, color, hover, position, and animation.
+                </p>
+            </div>
+
+            <div class="example-stack">
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">11</span>
+                        <h3>Margin vs padding</h3>
+                        <p>
+                            Padding is space inside the box. Margin is space outside the box.
+                            If text feels too close to the edge, use padding. If boxes are too close together, use margin or gap.
+                        </p>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Spacing CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.box {
+    padding: 20px;  /* inside */
+    margin: 16px;   /* outside */
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="spacing-stage">
+                                <div class="margin-label">margin area</div>
+                                <div class="padding-box">
+                                    <span>content</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">12</span>
+                        <h3>Colors and contrast</h3>
+                        <p>
+                            Good colors are not only pretty. Text must be readable. Always check that text
+                            has enough contrast against its background.
+                        </p>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Color CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.notice {
+    background: #38bdf8;
+    color: #03111f;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="sample-color good">Readable contrast</div>
+                            <div class="sample-color bad">Harder to read</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">13</span>
+                        <h3>Hover state</h3>
+                        <p>
+                            Hover states give feedback when the mouse is over something clickable.
+                            They make buttons and links feel alive.
+                        </p>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Hover CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <div class="sample-hover">Hover me</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">14</span>
+                        <h3>Position badge</h3>
+                        <p>
+                            Positioning lets you place something inside another box, like a sale badge on a product card.
+                            The parent uses <code>position: relative</code>, and the badge uses <code>position: absolute</code>.
+                        </p>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Position CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>.card {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame">
+                            <div class="sample-position">
+                                <span>New</span>
+                                <h4>Course Card</h4>
+                                <p>Badge is placed in the top-right corner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demo-card">
+                    <div class="demo-explain">
+                        <span class="demo-number">15</span>
+                        <h3>Animation</h3>
+                        <p>
+                            Animation should guide attention, not distract. Small movement is usually better
+                            than too much movement.
+                        </p>
+                    </div>
+                    <div class="demo-code">
+                        <div class="card-title">
+                            <h3>Animation CSS</h3>
+                            <button class="copy-btn" type="button" data-copy>Copy</button>
+                        </div>
+                        <pre><code>@keyframes pulse {
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.dot {
+    animation: pulse 1.6s infinite;
+}</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <p class="result-label">Result</p>
+                        <div class="result-frame center-result">
+                            <div class="sample-pulse"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="css" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">CSS reference</p>
+                <h2>Make the page look intentional</h2>
+                <p>CSS works by selecting HTML and applying rules. Every rule has a property and a value.</p>
+            </div>
+
+            <div class="content-grid">
+                <article class="code-card wide">
+                    <div class="card-title">
+                        <h3>Beginner CSS starter</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}</code></pre>
+                </article>
+
+                <article class="reference-card">
+                    <h3>Selectors</h3>
+                    <dl class="reference-list">
+                        <div><dt><code>h1</code></dt><dd>Selects all H1 elements.</dd></div>
+                        <div><dt><code>.card</code></dt><dd>Selects elements with class="card".</dd></div>
+                        <div><dt><code>#hero</code></dt><dd>Selects the element with id="hero".</dd></div>
+                        <div><dt><code>button:hover</code></dt><dd>Changes style when hovered.</dd></div>
+                    </dl>
+                </article>
+
+                <article class="reference-card">
+                    <h3>Most used properties</h3>
+                    <dl class="reference-list">
+                        <div><dt><code>color</code></dt><dd>Text color.</dd></div>
+                        <div><dt><code>background</code></dt><dd>Background color or image.</dd></div>
+                        <div><dt><code>padding</code></dt><dd>Space inside an element.</dd></div>
+                        <div><dt><code>margin</code></dt><dd>Space outside an element.</dd></div>
+                        <div><dt><code>border-radius</code></dt><dd>Rounded corners.</dd></div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <section id="layouts" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Layouts</p>
+                <h2>Place things where they belong</h2>
+                <p>Use Flexbox for one direction and Grid for full page/card layouts.</p>
+            </div>
+
+            <div class="two-column">
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>Flexbox</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}</code></pre>
+                    <p>Best for navigation bars, button rows, centering, and horizontal groups.</p>
+                </article>
+
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>Grid</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}</code></pre>
+                    <p>Best for galleries, dashboards, product cards, and responsive sections.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="diagrams" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Visual diagrams</p>
+                <h2>See how the website parts connect</h2>
+                <p>
+                    Diagrams help when code feels abstract. These show the path from files to browser result,
+                    and how semantic HTML tags fit together inside a real page.
+                </p>
+            </div>
+
+            <div class="diagram-grid">
+                <article class="diagram-card">
+                    <h3>How HTML and CSS become a website</h3>
+                    <div class="flow-diagram" aria-label="HTML and CSS browser flow">
+                        <div class="flow-node">
+                            <span>1</span>
+                            <strong>index.html</strong>
+                            <p>Structure and content</p>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-node">
+                            <span>2</span>
+                            <strong>Browser</strong>
+                            <p>Reads the HTML tags</p>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-node">
+                            <span>3</span>
+                            <strong>style.css</strong>
+                            <p>Colors, spacing, layout</p>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-node result">
+                            <span>4</span>
+                            <strong>Final page</strong>
+                            <p>What the visitor sees</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="diagram-card">
+                    <h3>Semantic HTML page map</h3>
+                    <div class="tree-diagram" aria-label="Semantic HTML tree diagram">
+                        <div class="tree-root">&lt;body&gt;</div>
+                        <div class="tree-branch">
+                            <div>&lt;header&gt;<span>top intro area</span></div>
+                            <div class="tree-child">&lt;nav&gt;<span>navigation links</span></div>
+                        </div>
+                        <div class="tree-branch">
+                            <div>&lt;main&gt;<span>main content</span></div>
+                            <div class="tree-child">&lt;section&gt;<span>one grouped topic</span></div>
+                            <div class="tree-child">&lt;article&gt;<span>independent card/post</span></div>
+                        </div>
+                        <div class="tree-branch">
+                            <div>&lt;footer&gt;<span>bottom information</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="diagram-card wide-diagram">
+                    <h3>Box model diagram</h3>
+                    <div class="box-model-diagram" aria-label="CSS box model diagram">
+                        <div class="margin-box">
+                            <span>margin: outside space</span>
+                            <div class="border-box">
+                                <span>border: edge line</span>
+                                <div class="padding-area">
+                                    <span>padding: inside space</span>
+                                    <div class="content-box">content</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Mini project lab</p>
+                <h2>Build real website pieces</h2>
+                <p>
+                    These are bigger patterns made from the small elements you already learned.
+                    Study the result first, then read the code and notice how the HTML structure matches the visual layout.
+                </p>
+            </div>
+
+            <div class="project-lab">
+                <article class="project-demo">
+                    <div class="project-preview">
+                        <header class="landing-preview">
+                            <nav>
+                                <strong>LearnFlow</strong>
+                                <a href="#">Lessons</a>
+                                <a href="#">Free guide</a>
+                                <a href="#">Login</a>
+                            </nav>
+                            <section>
+                                <p>Online course</p>
+                                <h3>Learn web design with clear examples.</h3>
+                                <button type="button">Start free</button>
+                            </section>
+                        </header>
+                    </div>
+                    <div class="project-info">
+                        <h3>Landing page hero</h3>
+                        <p>A landing page needs a clear title, short value, and one main action.</p>
+                        <pre><code>&lt;header class="landing"&gt;
+    &lt;nav&gt;Logo and links&lt;/nav&gt;
+    &lt;section&gt;
+        &lt;h1&gt;Main offer&lt;/h1&gt;
+        &lt;button&gt;Start free&lt;/button&gt;
+    &lt;/section&gt;
+&lt;/header&gt;</code></pre>
+                    </div>
+                </article>
+
+                <article class="project-demo">
+                    <div class="project-preview">
+                        <section class="free-preview">
+                            <article>
+                                <span>Free</span>
+                                <strong>HTML</strong>
+                                <p>Learn structure, tags, and forms without paying.</p>
+                                <button type="button">Start</button>
+                            </article>
+                            <article class="featured">
+                                <span>Free</span>
+                                <strong>CSS</strong>
+                                <p>Practice layout, colors, and responsive design.</p>
+                                <button type="button">Learn</button>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="project-info">
+                        <h3>Free feature cards</h3>
+                        <p>Use repeated articles to show what the free website offers. One can have an extra class like <code>featured</code>.</p>
+                        <pre><code>&lt;section class="features"&gt;
+    &lt;article&gt;HTML lessons&lt;/article&gt;
+    &lt;article class="featured"&gt;CSS lessons&lt;/article&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                </article>
+
+                <article class="project-demo">
+                    <div class="project-preview">
+                        <section class="dashboard-preview">
+                            <aside>Menu</aside>
+                            <main>
+                                <div>Visitors<br><strong data-visitor-count>Connect</strong></div>
+                                <div>Lessons<br><strong>Free</strong></div>
+                                <div class="wide-stat">Activity chart</div>
+                            </main>
+                        </section>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard layout</h3>
+                        <p>Dashboards often use an aside for navigation and a grid for content panels.</p>
+                        <pre><code>&lt;section class="dashboard"&gt;
+    &lt;aside&gt;Menu&lt;/aside&gt;
+    &lt;main&gt;
+        &lt;div&gt;Stats&lt;/div&gt;
+        &lt;div&gt;Chart&lt;/div&gt;
+    &lt;/main&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="recipes" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Website recipes</p>
+                <h2>What to use when you want a specific result</h2>
+                <p>When you are stuck, start from the result you want. This map tells you which HTML and CSS pieces usually create it.</p>
+            </div>
+
+            <div class="recipe-grid">
+                <article>
+                    <h3>Top navigation</h3>
+                    <p>Use <code>header</code>, <code>nav</code>, links, Flexbox, gap, and sticky position.</p>
+                </article>
+                <article>
+                    <h3>Hero area</h3>
+                    <p>Use <code>section</code>, <code>h1</code>, paragraph, button/link, max-width, and padding.</p>
+                </article>
+                <article>
+                    <h3>Card grid</h3>
+                    <p>Use repeated <code>article</code> tags, CSS Grid, padding, border, and box-shadow.</p>
+                </article>
+                <article>
+                    <h3>Contact form</h3>
+                    <p>Use <code>form</code>, labels, inputs, textarea, button, and clear focus states.</p>
+                </article>
+                <article>
+                    <h3>Mobile layout</h3>
+                    <p>Use flexible widths, <code>auto-fit</code> grids, and media queries for difficult parts.</p>
+                </article>
+                <article>
+                    <h3>Modern theme</h3>
+                    <p>Use CSS variables, dark background, readable contrast, subtle borders, and spacing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="mistakes" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Mistakes and fixes</p>
+                <h2>Common beginner problems</h2>
+                <p>Almost every developer hits these. The fix is usually small once you know what to look for.</p>
+            </div>
+
+            <div class="fix-grid">
+                <article>
+                    <span>Problem</span>
+                    <h3>CSS is not working</h3>
+                    <p>Check the file name, folder location, and the link tag in the HTML head.</p>
+                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                </article>
+                <article>
+                    <span>Problem</span>
+                    <h3>Class style not applying</h3>
+                    <p>The HTML class and CSS selector must match exactly.</p>
+                    <pre><code>&lt;div class="card"&gt;&lt;/div&gt;
+
+.card {
+    padding: 20px;
+}</code></pre>
+                </article>
+                <article>
+                    <span>Problem</span>
+                    <h3>Page has unwanted white edges</h3>
+                    <p>Browsers give the body default margin. Remove it in CSS.</p>
+                    <pre><code>body {
+    margin: 0;
+}</code></pre>
+                </article>
+                <article>
+                    <span>Problem</span>
+                    <h3>Cards overflow on mobile</h3>
+                    <p>Use flexible columns instead of fixed wide columns.</p>
+                    <pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="learning-roadmap" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Beginner roadmap</p>
+                <h2>The order to learn web design</h2>
+                <p>Follow this path when you feel lost. Each level builds on the previous one.</p>
+            </div>
+
+            <div class="timeline">
+                <article><span>1</span><h3>HTML basics</h3><p>Tags, headings, paragraphs, links, images, lists, forms.</p></article>
+                <article><span>2</span><h3>CSS basics</h3><p>Colors, fonts, spacing, borders, cards, buttons.</p></article>
+                <article><span>3</span><h3>Layout</h3><p>Flexbox, Grid, sections, containers, navigation, footers.</p></article>
+                <article><span>4</span><h3>Responsive design</h3><p>Flexible widths, media queries, mobile testing, readable text.</p></article>
+                <article><span>5</span><h3>Projects</h3><p>Portfolio, login page, restaurant menu, dashboard, blog.</p></article>
+                <article><span>6</span><h3>JavaScript</h3><p>Clicks, menus, forms, DOM changes, interactive components.</p></article>
+            </div>
+        </section>
+
+        <section id="challenges" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Practice challenges</p>
+                <h2>Train your hands, not only your eyes</h2>
+                <p>Pick a challenge, build it, then compare your result with the examples in this guide.</p>
+            </div>
+
+            <div class="challenge-grid">
+                <article><strong>Easy</strong><h3>Profile card</h3><p>Create an image, name, paragraph, and button inside a card.</p></article>
+                <article><strong>Easy</strong><h3>Simple navbar</h3><p>Make a logo on the left and three links on the right.</p></article>
+                <article><strong>Medium</strong><h3>Free features section</h3><p>Build three cards that explain what your free site offers.</p></article>
+                <article><strong>Medium</strong><h3>Contact form</h3><p>Use labels, inputs, textarea, button, and focus styles.</p></article>
+                <article><strong>Hard</strong><h3>Dashboard</h3><p>Create a sidebar, stat cards, and a wide chart area.</p></article>
+                <article><strong>Hard</strong><h3>Responsive portfolio</h3><p>Build a page that looks good on phone and laptop.</p></article>
+            </div>
+        </section>
+
+        <section id="before-after" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Before and after</p>
+                <h2>How CSS transforms plain HTML</h2>
+                <p>The HTML gives content. CSS turns that content into a designed interface.</p>
+            </div>
+
+            <div class="before-after-grid">
+                <article>
+                    <h3>Before: plain HTML</h3>
+                    <div class="plain-preview">
+                        <h4>Product Card</h4>
+                        <p>A clean card for a product or project.</p>
+                        <button type="button">Buy now</button>
+                    </div>
+                </article>
+                <article>
+                    <h3>After: styled with CSS</h3>
+                    <div class="styled-preview">
+                        <span>Featured</span>
+                        <h4>Product Card</h4>
+                        <p>A clean card for a product or project.</p>
+                        <button type="button">Buy now</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="dictionary" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">HTML and CSS dictionary</p>
+                <h2>Quick meanings when you forget</h2>
+                <p>Use this like a mini dictionary. It tells you what the tag or property does and when to use it.</p>
+            </div>
+
+            <div class="dictionary-grid">
+                <article>
+                    <h3>HTML tag dictionary</h3>
+                    <table class="dictionary-table">
+                        <tr><th>Tag</th><th>Meaning</th><th>Use when</th></tr>
+                        <tr><td><code>&lt;div&gt;</code></td><td>Generic box</td><td>You need a wrapper with no special meaning.</td></tr>
+                        <tr><td><code>&lt;span&gt;</code></td><td>Small inline wrapper</td><td>You need to style a few words.</td></tr>
+                        <tr><td><code>&lt;article&gt;</code></td><td>Independent content</td><td>Cards, posts, products, comments.</td></tr>
+                        <tr><td><code>&lt;form&gt;</code></td><td>Collects input</td><td>Login, contact, search, signup.</td></tr>
+                        <tr><td><code>&lt;input&gt;</code></td><td>Typing field</td><td>User enters short data.</td></tr>
+                    </table>
+                </article>
+                <article>
+                    <h3>CSS property dictionary</h3>
+                    <table class="dictionary-table">
+                        <tr><th>Property</th><th>Meaning</th><th>Example</th></tr>
+                        <tr><td><code>display</code></td><td>Layout behavior</td><td><code>display: grid;</code></td></tr>
+                        <tr><td><code>gap</code></td><td>Space between items</td><td><code>gap: 16px;</code></td></tr>
+                        <tr><td><code>padding</code></td><td>Inside space</td><td><code>padding: 20px;</code></td></tr>
+                        <tr><td><code>margin</code></td><td>Outside space</td><td><code>margin: 24px;</code></td></tr>
+                        <tr><td><code>position</code></td><td>Element placement</td><td><code>position: sticky;</code></td></tr>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <section id="common-layouts" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Common layouts</p>
+                <h2>Patterns you will build again and again</h2>
+                <p>Most websites are combinations of these layouts.</p>
+            </div>
+
+            <div class="layout-gallery">
+                <article><span class="layout-nav"></span><h3>Navbar</h3><p>Logo, links, action button.</p></article>
+                <article><span class="layout-sidebar"></span><h3>Sidebar</h3><p>Menu beside content.</p></article>
+                <article><span class="layout-two"></span><h3>Two columns</h3><p>Text beside image or panel.</p></article>
+                <article><span class="layout-cards"></span><h3>Card grid</h3><p>Repeated content blocks.</p></article>
+                <article><span class="layout-footer"></span><h3>Footer</h3><p>Links and bottom info.</p></article>
+                <article><span class="layout-dashboard"></span><h3>Dashboard</h3><p>Sidebar plus data panels.</p></article>
+            </div>
+        </section>
+
+        <section id="starter-template" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Copy starter template</p>
+                <h2>Start a new website faster</h2>
+                <p>Copy these two starter files when you begin a small HTML/CSS project.</p>
+            </div>
+
+            <div class="two-column">
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>index.html starter</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;Header&lt;/header&gt;
+    &lt;main&gt;Main content&lt;/main&gt;
+    &lt;footer&gt;Footer&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </article>
+
+                <article class="code-card">
+                    <div class="card-title">
+                        <h3>style.css starter</h3>
+                        <button class="copy-btn" type="button" data-copy>Copy</button>
+                    </div>
+                    <pre><code>* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f8fc;
+    color: #111827;
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="project-gallery" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Project gallery</p>
+                <h2>Ideas for complete pages</h2>
+                <p>These are the projects that make HTML and CSS finally feel real.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <article><h3>Portfolio homepage</h3><p>Hero, about, skills, projects, contact.</p></article>
+                <article><h3>Login page</h3><p>Form, labels, inputs, button, helper links.</p></article>
+                <article><h3>Restaurant menu</h3><p>Sections, price cards, photos, footer.</p></article>
+                <article><h3>Product card</h3><p>Image, title, price, badge, button.</p></article>
+                <article><h3>Dashboard</h3><p>Sidebar, stats, grid, charts, tables.</p></article>
+                <article><h3>Blog article</h3><p>Typography, headings, quote, author area.</p></article>
+            </div>
+        </section>
+
+        <section id="quiz" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Quick quiz</p>
+                <h2>Check what you remember</h2>
+                <p>Click an answer. The page will tell you if it is correct.</p>
+            </div>
+
+            <div class="quiz-grid">
+                <article class="quiz-card" data-answer="b">
+                    <h3>What tag creates a link?</h3>
+                    <button type="button" data-choice="a">&lt;link&gt;</button>
+                    <button type="button" data-choice="b">&lt;a&gt;</button>
+                    <button type="button" data-choice="c">&lt;button&gt;</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+                <article class="quiz-card" data-answer="c">
+                    <h3>Which CSS property changes text color?</h3>
+                    <button type="button" data-choice="a">background</button>
+                    <button type="button" data-choice="b">font-size</button>
+                    <button type="button" data-choice="c">color</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+                <article class="quiz-card" data-answer="a">
+                    <h3>Which layout tool is best for rows and columns?</h3>
+                    <button type="button" data-choice="a">Grid</button>
+                    <button type="button" data-choice="b">Color</button>
+                    <button type="button" data-choice="c">Border radius</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+                <article class="quiz-card" data-answer="b">
+                    <h3>Which tag should wrap the main content?</h3>
+                    <button type="button" data-choice="a">&lt;footer&gt;</button>
+                    <button type="button" data-choice="b">&lt;main&gt;</button>
+                    <button type="button" data-choice="c">&lt;span&gt;</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+                <article class="quiz-card" data-answer="a">
+                    <h3>Which property creates inside space?</h3>
+                    <button type="button" data-choice="a">padding</button>
+                    <button type="button" data-choice="b">margin</button>
+                    <button type="button" data-choice="c">href</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+                <article class="quiz-card" data-answer="c">
+                    <h3>Which attribute describes an image?</h3>
+                    <button type="button" data-choice="a">class</button>
+                    <button type="button" data-choice="b">src</button>
+                    <button type="button" data-choice="c">alt</button>
+                    <p class="quiz-feedback"></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="progress" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Progress tracker</p>
+                <h2>Mark what you understand</h2>
+                <p>Your progress is saved in this browser. Finish all items to unlock the completion card.</p>
+            </div>
+
+            <div class="progress-panel">
+                <div class="progress-meter">
+                    <strong id="progress-percent">0%</strong>
+                    <span>completed</span>
+                    <div class="meter-track"><div id="meter-fill"></div></div>
+                </div>
+                <div class="progress-list">
+                    <label><input type="checkbox" data-progress-item="html-structure"> I understand HTML structure.</label>
+                    <label><input type="checkbox" data-progress-item="semantic-tags"> I understand semantic tags.</label>
+                    <label><input type="checkbox" data-progress-item="css-selectors"> I understand CSS selectors.</label>
+                    <label><input type="checkbox" data-progress-item="box-model"> I understand margin, border, padding, content.</label>
+                    <label><input type="checkbox" data-progress-item="flexbox"> I built a Flexbox navbar.</label>
+                    <label><input type="checkbox" data-progress-item="grid"> I built a Grid layout.</label>
+                    <label><input type="checkbox" data-progress-item="responsive"> I tested a page on mobile size.</label>
+                    <label><input type="checkbox" data-progress-item="project"> I completed one mini project.</label>
+                </div>
+                <article class="certificate-card" id="certificate-card">
+                    <p class="eyebrow">Completion card</p>
+                    <h3>You completed the HTML + CSS guide.</h3>
+                    <p>You are ready to build a small real website and start learning JavaScript.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="playground" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Interactive playground</p>
+                <h2>Edit code and see the result live</h2>
+                <p>Change the HTML or CSS below. The preview updates instantly.</p>
+            </div>
+
+            <div class="playground">
+                <div class="editor-group">
+                    <label for="html-editor">HTML</label>
+                    <textarea id="html-editor" spellcheck="false">&lt;section class="play-card"&gt;
+    &lt;h1&gt;Hello Web&lt;/h1&gt;
+    &lt;p&gt;I am learning HTML and CSS.&lt;/p&gt;
+    &lt;button&gt;Start&lt;/button&gt;
+&lt;/section&gt;</textarea>
+                </div>
+                <div class="editor-group">
+                    <label for="css-editor">CSS</label>
+                    <textarea id="css-editor" spellcheck="false">body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    padding: 24px;
+}
+
+.play-card {
+    padding: 24px;
+    background: #1e293b;
+    border-radius: 12px;
+}
+
+button {
+    padding: 10px 16px;
+    background: #38bdf8;
+    border: 0;
+    border-radius: 8px;
+}</textarea>
+                </div>
+                <div class="preview-group">
+                    <div class="card-title">
+                        <h3>Live result</h3>
+                        <button id="reset-playground" class="copy-btn" type="button">Reset</button>
+                    </div>
+                    <iframe id="playground-preview" title="Live HTML and CSS preview" sandbox=""></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="guided-projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Step-by-step projects</p>
+                <h2>Build full pieces one step at a time</h2>
+                <p>Each tutorial gives you the structure, styling goal, and final check.</p>
+            </div>
+
+            <div class="tutorial-grid">
+                <article>
+                    <span class="difficulty beginner">Beginner</span>
+                    <h3>Login page</h3>
+                    <ol>
+                        <li>Create a centered <code>form</code>.</li>
+                        <li>Add email and password labels.</li>
+                        <li>Style inputs with padding and border.</li>
+                        <li>Add a full-width submit button.</li>
+                    </ol>
+                    <a href="#playground">Try in playground</a>
+                </article>
+                <article>
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <h3>Portfolio homepage</h3>
+                    <ol>
+                        <li>Build a header and hero.</li>
+                        <li>Add a project card grid.</li>
+                        <li>Add an about section.</li>
+                        <li>Make it responsive.</li>
+                    </ol>
+                    <a href="#projects">See project examples</a>
+                </article>
+                <article>
+                    <span class="difficulty advanced">Advanced</span>
+                    <h3>Dashboard page</h3>
+                    <ol>
+                        <li>Create sidebar and main area.</li>
+                        <li>Add stat cards with Grid.</li>
+                        <li>Add a table or chart area.</li>
+                        <li>Collapse to one column on mobile.</li>
+                    </ol>
+                    <a href="#layouts">Review layouts</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="glossary" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Glossary</p>
+                <h2>Words developers use</h2>
+                <p>A quick A-Z style list for words that appear in tutorials and docs.</p>
+            </div>
+
+            <div class="glossary-grid">
+                <article><strong>Attribute</strong><p>Extra information inside an HTML tag, like <code>href</code> or <code>class</code>.</p></article>
+                <article><strong>Selector</strong><p>The CSS part that chooses what to style, like <code>.card</code>.</p></article>
+                <article><strong>Property</strong><p>The CSS thing you change, like <code>color</code> or <code>padding</code>.</p></article>
+                <article><strong>Value</strong><p>The setting for a property, like <code>20px</code> or <code>blue</code>.</p></article>
+                <article><strong>Semantic</strong><p>HTML that describes meaning, like <code>main</code>, <code>nav</code>, and <code>footer</code>.</p></article>
+                <article><strong>Responsive</strong><p>A design that adapts to phone, tablet, and desktop screens.</p></article>
+                <article><strong>Viewport</strong><p>The visible browser area where your website appears.</p></article>
+                <article><strong>DOM</strong><p>The browser's live version of your HTML that JavaScript can change.</p></article>
+            </div>
+        </section>
+
+        <section id="download" class="section">
+            <div class="download-card">
+                <div>
+                    <p class="eyebrow">Download</p>
+                    <h2>Keep the cheat sheet offline</h2>
+                    <p>Download the Word cheat sheet generated from your Python script.</p>
+                </div>
+                <a class="button primary" href="HTML_CSS_Cheat_Sheet.docx" download>Download DOCX</a>
+            </div>
+        </section>
+
+        <section id="visitors" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Real visitor count</p>
+                <h2>Count real people after publishing</h2>
+                <p>
+                    Real global visitor counts need a small backend, database, or analytics endpoint.
+                    This site includes the counter UI and JavaScript hook. Add your endpoint in
+                    <code>script.js</code> when you publish.
+                </p>
+            </div>
+
+            <div class="visitor-panel">
+                <article>
+                    <span class="visitor-label">Total visitors</span>
+                    <strong data-visitor-count>Not connected</strong>
+                    <p data-visitor-status>Connect a counter endpoint to count real people across devices.</p>
+                </article>
+                <article>
+                    <span class="visitor-label">How to make it real</span>
+                    <ol>
+                        <li>Create a counter endpoint with your hosting provider or database.</li>
+                        <li>Make the endpoint return JSON like <code>{"count": 123}</code>.</li>
+                        <li>Paste the endpoint URL into <code>VISITOR_COUNTER_ENDPOINT</code> in <code>script.js</code>.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section id="support" class="section">
+            <div class="support-card">
+                <div>
+                    <p class="eyebrow">Support the creator</p>
+                    <h2>This guide is free. Support helps me keep building from Lebanon.</h2>
+                    <p>
+                        If this website helped you learn, you can support the time, internet, electricity,
+                        and work behind it. Message me on WhatsApp or call the number below if you want to donate.
+                    </p>
+                    <div class="support-number">
+                        <span>Donation / WhatsApp number</span>
+                        <strong dir="ltr">+961 71 133 856</strong>
+                    </div>
+                </div>
+                <div class="support-actions">
+                    <img class="support-qr" src="support-qr.png" alt="QR code to support CodeSheet Academy on WhatsApp">
+                    <a class="button primary" href="https://wa.me/96171133856?text=Hi%2C%20I%20want%20to%20support%20CodeSheet%20Academy" target="_blank" rel="noopener">Donate on WhatsApp</a>
+                    <a class="button secondary" href="tel:+96171133856">Call 71 133 856</a>
+                    <button class="button secondary" type="button" data-copy-value="+96171133856">Copy number</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section next-map">
+            <div class="section-heading">
+                <p class="eyebrow">Next lesson map</p>
+                <h2>Where to go next</h2>
+            </div>
+            <div class="next-grid">
+                <a href="#html">Learn HTML basics →</a>
+                <a href="#css">Learn CSS basics →</a>
+                <a href="#layouts">Practice layouts →</a>
+                <a href="#playground">Experiment live →</a>
+                <a href="#guided-projects">Build a project →</a>
+                <a href="#quiz">Take the quiz →</a>
+            </div>
+        </section>
+
+        <section id="publish" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Publish ready</p>
+                <h2>Before putting the site online</h2>
+                <p>Use this checklist before uploading to GitHub Pages, Netlify, Vercel, or any static hosting service.</p>
+            </div>
+
+            <div class="publish-grid">
+                <article>
+                    <span>SEO</span>
+                    <h3>Page metadata</h3>
+                    <p>Title, description, social sharing tags, favicon, and theme color are included.</p>
+                </article>
+                <article>
+                    <span>Access</span>
+                    <h3>Accessibility basics</h3>
+                    <p>Semantic sections, visible focus styles, labels, skip link, and reduced-motion support are included.</p>
+                </article>
+                <article>
+                    <span>Files</span>
+                    <h3>Static hosting files</h3>
+                    <p>The site includes a manifest, robots file, 404 page, and downloadable cheat sheet.</p>
+                </article>
+                <article>
+                    <span>Test</span>
+                    <h3>Final checks</h3>
+                    <p>Open on mobile, test the menu, search, quiz, playground, copy buttons, and download button.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="advanced" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Advanced but useful</p>
+                <h2>Level up after the basics</h2>
+                <p>These ideas make websites cleaner, faster to edit, and easier to maintain.</p>
+            </div>
+
+            <div class="advanced-grid">
+                <article class="feature-card">
+                    <h3>CSS variables</h3>
+                    <p>Store colors and spacing in one place so you can change the design quickly.</p>
+                    <pre><code>:root {
+    --accent: #38bdf8;
+}
+
+a {
+    color: var(--accent);
+}</code></pre>
+                </article>
+                <article class="feature-card">
+                    <h3>Responsive units</h3>
+                    <p>Use flexible sizing so your design adapts instead of breaking.</p>
+                    <pre><code>.hero {
+    width: min(1100px, 100% - 32px);
+    font-size: clamp(2rem, 5vw, 5rem);
+}</code></pre>
+                </article>
+                <article class="feature-card">
+                    <h3>Accessibility</h3>
+                    <p>Use real buttons, labels, alt text, visible focus, and readable contrast.</p>
+                    <pre><code>button:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+}</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="debug" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">When something breaks</p>
+                <h2>Debugging checklist</h2>
+                <p>Most beginner bugs come from spelling, missing links, wrong file paths, or CSS selectors that do not match the HTML.</p>
+            </div>
+
+            <div class="checklist">
+                <label><input type="checkbox"> Is <code>style.css</code> in the same folder as <code>index.html</code>?</label>
+                <label><input type="checkbox"> Did you write <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> correctly?</label>
+                <label><input type="checkbox"> Did you save the file before refreshing the browser?</label>
+                <label><input type="checkbox"> Does your class name match exactly, including spelling?</label>
+                <label><input type="checkbox"> Did you close every tag and every curly brace?</label>
+                <label><input type="checkbox"> Did you inspect the page with browser developer tools?</label>
+            </div>
+        </section>
+
+        <section id="roadmap" class="section roadmap">
+            <div class="section-heading">
+                <p class="eyebrow">Future learning</p>
+                <h2>What comes next</h2>
+            </div>
+
+            <div class="roadmap-list">
+                <article><strong>HTML</strong><span>Semantic pages, forms, SEO, accessibility.</span></article>
+                <article><strong>CSS</strong><span>Flexbox, Grid, animations, responsive design.</span></article>
+                <article><strong>JavaScript</strong><span>Events, DOM, forms, small app behavior.</span></article>
+                <article><strong>Tools</strong><span>Git, GitHub, hosting, browser developer tools.</span></article>
+                <article><strong>Frameworks</strong><span>React or Vue after you understand HTML, CSS, and JS.</span></article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>CodeSheet Academy</strong>
+            <p>Built as a complete HTML + CSS study guide with examples, diagrams, projects, and a live playground.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#search">Search</a>
+            <a href="#playground">Playground</a>
+            <a href="#publish">Publish checklist</a>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
+</body>
+</html>

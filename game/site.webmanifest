@@ -1,0 +1,16 @@
+{
+  "name": "CodeSheet Academy",
+  "short_name": "CodeSheet",
+  "description": "A complete HTML and CSS learning guide with examples, diagrams, projects, quizzes, and a live playground.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#070b14",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
